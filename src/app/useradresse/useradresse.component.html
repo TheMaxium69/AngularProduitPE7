@@ -1,0 +1,20 @@
+<h1>Vos Addresse</h1>
+<div class="row">
+  <ng-container *ngFor="let adresse of userConnected?.addresses">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{ adresse.addressID }}</h5>
+        <p class="card-text">{{ adresse.streetLine1 }}</p>
+        <p class="card-text">{{ adresse.streetLine2 }}</p>
+        <p class="card-text">{{ adresse.zipCode }}</p>
+        <p class="card-text">{{ adresse.city }}</p>
+        <p class="card-text">{{ adresse.phone }}</p>
+        <p class="card-text">{{ adresse.countryID }}</p>
+        <p class="card-text">{{ adresse.clientID }}</p>
+      </div>
+    </div>
+
+
+  </ng-container>
+</div>

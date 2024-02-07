@@ -1,0 +1,12 @@
+
+
+<h1>Votre Profile</h1>
+
+<div style="margin: 40px;padding:60px; border-radius: 17px; background-color: #c3ffff;text-align: center">
+  <small>id : {{ userConnected?.clientID }}</small>
+  <h2>Votre email : {{ userConnected?.email }}</h2>
+
+  <a class="btn btn-primary" routerLink="/user/adresses">Vos Addresse au nombre de : {{ userConnected?.addresses?.length }} </a>
+  <a class="btn btn-primary" routerLink="/user/orders">Vos Commande au nombre : {{ userConnected?.orders?.length }} </a><br>
+  <a class="btn btn-danger" routerLink="/user/adresse/create">Ajoutez une addresse </a>
+</div>

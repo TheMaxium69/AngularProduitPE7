@@ -1,0 +1,38 @@
+
+<h1>Ajouter une addresses</h1>
+<br>
+<div class="container">
+
+  <form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+
+    <div class="mb-3">
+      <input placeholder="streetLine1" type="text" class="form-control" name="streetLine1" ngModel required>
+    </div>
+    <div class="mb-3">
+      <input placeholder="streetLine2" type="text" class="form-control" name="streetLine2" ngModel required>
+    </div>
+    <div class="mb-3">
+      <input placeholder="zipCode" type="text" class="form-control" name="zipCode" ngModel required>
+    </div>
+    <div class="mb-3">
+      <input placeholder="city" type="text" class="form-control" name="city" ngModel required>
+    </div>
+    <div class="mb-3">
+      <input placeholder="phone" type="text" class="form-control" name="phone" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyé votre giga pokémon</button>
+
+  </form>
+
+</div>
+
+<!--{
+  "addressID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "streetLine1": "string",
+  "streetLine2": "string",
+  "zipCode": "string",
+  "city": "string",
+  "phone": "+9744010123601",
+  "countryID": 0,
+  "clientID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}-->

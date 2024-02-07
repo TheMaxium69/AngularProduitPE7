@@ -1,0 +1,17 @@
+<h1>Vos commande</h1>
+<div class="row">
+  <ng-container *ngFor="let order of userConnected?.orders">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{ order.orderID }}</h5>
+        <p class="card-text">{{ order.clientID }}</p>
+        <p class="card-text">{{ order.orderState }}</p>
+        <p class="card-text">{{ order.creationDateTime }}</p>
+        <p class="card-text">{{ order.lastModifiedDateTime }}</p>
+      </div>
+    </div>
+
+
+  </ng-container>
+</div>

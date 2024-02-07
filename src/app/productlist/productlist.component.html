@@ -1,0 +1,16 @@
+<div class="row">
+  <ng-container *ngFor="let product of productAll">
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <p class="card-text">{{ product.productType }}</p>
+        <p class="card-text">{{ product.stockpiled }}</p>
+        <p class="card-text">{{ product.unitPrice }} €</p>
+        <a routerLink="/product/{{ product.productID }}" class="btn btn-primary">Voir detail</a>
+      </div>
+    </div>
+
+  </ng-container>
+</div>
